@@ -31,3 +31,6 @@ https://cnpja.com/
 
 # Aula 15-12-2022
 * Continuação de Consumo de API e Documentação via Swagger
+
+# Api de Autenticacao 
+https://manage.auth0.com/welcome/
