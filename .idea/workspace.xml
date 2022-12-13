@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="ok" />
+    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="ok">
+      <change beforePath="$PROJECT_DIR$/cronograma.md" beforeDir="false" afterPath="$PROJECT_DIR$/cronograma.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
@@ -37,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiSistema.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#6#62#0#PHP" expanded="true" />
                 <element signature="n#callPing#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
@@ -51,12 +53,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="131">
-                <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <first_editor relative-caret-position="719">
+                <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cronograma.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="392">
+                <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -92,13 +106,14 @@
         <option value="$PROJECT_DIR$/usuario-consulta.html" />
         <option value="$PROJECT_DIR$/api/controllers/ControllerApiSistema.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/cronograma.md" />
       </list>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="2097" />
@@ -118,17 +133,6 @@
             <path>
               <item name="sistema" type="b2602c69:ProjectViewProjectNode" />
               <item name="sistema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sistema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sistema" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sistema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sistema" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,6 +180,7 @@
       <workItem from="1670346285381" duration="894000" />
       <workItem from="1670862967696" duration="722000" />
       <workItem from="1670882033491" duration="728000" />
+      <workItem from="1670963271934" duration="237000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1670346108165</created>
@@ -202,13 +207,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1495000" />
+    <option name="totallyTimeSpent" value="1732000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1407" extended-state="7" />
+    <frame x="-7" y="-7" width="2575" height="1407" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.099180005" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11440843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -254,6 +259,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiSistema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#62#0#PHP" expanded="true" />
+            <element signature="n#callPing#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
+            <element signature="n#getUsuario#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
+            <element signature="n#getPessoa#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
+            <element signature="n#getProduto#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
+            <element signature="n#getConsultaUsuario#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
+            <element signature="n#getConsultaUsuarioFiltro#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/core/Query.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -267,27 +288,21 @@
     <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiBase.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiSistema.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#62#0#PHP" expanded="true" />
-            <element signature="n#callPing#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
-            <element signature="n#getUsuario#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
-            <element signature="n#getPessoa#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
-            <element signature="n#getProduto#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
-            <element signature="n#getConsultaUsuario#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
-            <element signature="n#getConsultaUsuarioFiltro#0;n#ControllerApiSistema#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="131">
-            <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <first_editor relative-caret-position="719">
+            <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cronograma.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="392">
+            <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
