@@ -11,7 +11,8 @@ Consumindo API de Terceiros
 # Documentação de API com Swagger
 * ASAAS - INSOMNIA - https://asaas.com/desenvolvedores
 * Dashboard ASAAS - https://www.asaas.com/dashboard/index
-* CHAVE-API-ASAAS:$aact_YTU5YTE0M2M2N2I4MTliNzk0YTI5N2U5MzdjNWZmNDQ6OjAwMDAwMDAwMDAwMDAyNDUxNzk6OiRhYWNoXzJlZWUyNmVkLWJlNTctNDljMS1hOTE1LTU0NDU3N2JkYzRlOQ==
+* CHAVE-API-ASAAS:
+    * GERAR-NOVA-CHAVE
 
 * Preços Asaas 
     * https://www.asaas.com/config/index?tab=customerPlan
