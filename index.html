@@ -66,6 +66,19 @@
 <script>
     var ULTIMA_PAGINA_FILTRADA = 0;
 
+    function inicializaFiltroPaginas(){
+        var retorno = "<option value='1'>Página - 1</option>";
+        var pagina = 2;
+        while(pagina < 100){
+            
+            retorno += "<option value=\"" + pagina + "\">Página - " + pagina + "</option>";
+
+            pagina++;
+        }
+
+        document.querySelector("#pagina-auxilio").innerHTML = retorno;
+    }
+
     async function callApiTerceiros(method, port, body, oCall, urlParam) {
 
         if (body == undefined) {
@@ -270,7 +283,7 @@
 
 </script>
 
-<body>
+<body onload="inicializaFiltroPaginas()">
     <div class="documentacao centralizaEmemento">
         <h1>Documentação Api Dados Gov
             <a href="https://api.portaldatransparencia.gov.br/swagger-ui.html#/" target="_blank">clique aqui</a>
