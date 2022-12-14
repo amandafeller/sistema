@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Usuario</title>
+</head>
+<script>
+    function atualizaPaginaUsuario() {
+        const codigo_usuario = sessionStorage.getItem("usucodigo");
+
+        if (codigo_usuario != null) {
+
+            loadDadosUsuario(codigo_usuario);
+
+            document.querySelector("#usucodigoAlteracao").innerHTML = "Codigo Informado:" + codigo_usuario;
+        } else {
+            alert("Codigo Usuario Não Informado!");
+        }
+    }
+
+    function loadDadosUsuario(codigo_usuario) {
+        console.log("Buscando informacoes do usuario:" + codigo_usuario);
+
+        // Cria uma consulta com o codigo do usuario
+        var metodo = "POST";
+        var porta = "consultausuariofiltro";
+
+        var body = {
+            campofiltro: "usucodigo",
+            operadorfiltro: "igual",
+            valorfiltro: codigo_usuario
+        };
+
+        callApi(metodo, porta, body, function(data) {
+            // Carrega os dados do usuario na tabela html
+            loadAlteracaoUsuario(data, codigo_usuario);
+        });
+    }
+
+    function loadAlteracaoUsuario(data) {
+        console.log("Carregando informacoes do usuario:");
+
+        // Vai caregar os dados da API na tela
+        const aDadosUsuarios = data;
+
+        aDadosUsuarios.forEach(function(oUsuario, key) {
+            const codigo = oUsuario.usucodigo;
+            const nome = oUsuario.usunome;
+            const email = oUsuario.usuemail;
+            const situacao = oUsuario.usuativo;
+
+            // Carrega os dados da api no documento html
+            document.querySelector("#usucodigo").value = codigo;
+            document.querySelector("#usunome").value = nome;
+            document.querySelector("#usuemail").value = email;
+            document.querySelector("#usuativo").value = situacao;
+        });
+    }
+
+    function confirmarAlteracaoUsuario() {
+        console.log("Alterando usuario...");
+    }
+</script>
+
+<body onload="atualizaPaginaUsuario()">
+    <h1>Usuario sendo alterado</h1>
+    <h2 id="usucodigoAlteracao">Nao Informado</h2>
+    <hr>
+    <h1>Alteração de Usuario</h1>
+    <!-- <form action="#"> -->
+    <label for="usucodigo">Código:</label>
+    <input type="text" id="usucodigo">
+    <br>
+    <label for="usunome">Nome:</label>
+    <input type="text" id="usunome">
+    <br>
+    <label for="usuemail">E-mail:</label>
+    <input type="text" id="usuemail">
+    <br>
+    <label for="usuativo">Ativo:</label>
+    <select id="usuativo">
+        <option value="1">Sim</option>
+        <option value="0">Não</option>
+    </select>
+    <br>
+    <button onclick=confirmarAlteracaoUsuario()>Confirmar</button>
+    <!-- </form> -->
+</body>
+
+<script src="js/api.js" defer></script>
+
+</html>

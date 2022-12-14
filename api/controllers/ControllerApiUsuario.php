@@ -36,10 +36,53 @@ class ControllerApiUsuario extends ControllerApiBase {
         require_once ("./model/Usuario.php");
     
         $body = $request->getParsedBody();
+
+        $this->gravaUsuarioSistemaLote($body);
+
+        $dados = array(
+            "data" => date("Y-m-d H:i:s")            
+        );
+
+        return $response->withJson($dados, 200);
+
+
+        // $oUsuario = new Usuario($body["usunome"],$body["usuemail"],$body["ususenha"],$body["usutoken"],$body["usuativo"]);
+        // // Se ja tiver um usuario com este email, retorna este usuario
+        // if($aDadosUsuario = $this->getUsuarioPorEmail($oUsuario->getUsuemail())){
+        //     return $response->withJson($aDadosUsuario, 200);
+        // }
+        
+        // $token = encodeToken($oUsuario);
+        // $oUsuario->setUsutoken($token);
+        
+        // $oUsuario->setUsusenha(bcrypt($body["ususenha"]));
+        
+        // $body["usutoken"] = $token;
+        // $body["UsuarioBanco"] = $this->gravaUsuarioBanco($oUsuario);;
+        
+        // return $response->withJson($body, 200);
+    }
+    
+    private function gravaUsuarioSistemaLote($body){
+
+        $i = 10;
+        while($i < 200){
+
+            $body["usuemail"] = "senac" . $i . "@email.com";
+
+            $this->gravaUsuarioSistema($body);
+
+            $i++;
+        }
+    }
+
+        
+    private function gravaUsuarioSistema($body){
         $oUsuario = new Usuario($body["usunome"],$body["usuemail"],$body["ususenha"],$body["usutoken"],$body["usuativo"]);
+        
         // Se ja tiver um usuario com este email, retorna este usuario
         if($aDadosUsuario = $this->getUsuarioPorEmail($oUsuario->getUsuemail())){
-            return $response->withJson($aDadosUsuario, 200);
+            return true;
         }
         
         $token = encodeToken($oUsuario);
@@ -50,9 +93,9 @@ class ControllerApiUsuario extends ControllerApiBase {
         $body["usutoken"] = $token;
         $body["UsuarioBanco"] = $this->gravaUsuarioBanco($oUsuario);;
         
-        return $response->withJson($body, 200);
+        return true;
     }
-    
+
     private function gravaUsuarioBanco($oUsuario){
         // Se ja tiver um usuario com este email, retorna este usuario
         if($aDadosUsuario = $this->getUsuarioPorEmail($oUsuario->getUsuemail())){

@@ -60,18 +60,56 @@
                 situacao = "Inativo";
             }
 
+            const acaoAlterar = getAcaoAlterar(codigo);
+            const acaoExcluir = getAcaoExcluir(codigo);
+
             // adiciona as colunas da tabela da consulta
             body.innerHTML += `<tr>
                                     <td>` + codigo + `</td>
                                     <td>` + nome + `</td>
                                     <td>` + email + `</td>
                                     <td>` + situacao + `</td>
+                                    <td>` + acaoAlterar + `</td>
+                                    <td>` + acaoExcluir + `</td>
                                 </tr>`;
+        });
+    }
+
+    function getAcaoAlterar(codigoUsuario) {
+        return "<button onclick='alterarUsuario(" + codigoUsuario + ")'>Alterar</button>";
+    }
+
+    function getAcaoExcluir(codigoUsuario) {
+        return "<button onclick='excluirUsuario(" + codigoUsuario + ")'>Excluir</button>";
+    }
+
+    function alterarUsuario(codigoUsuario) {
+        console.log("Usuario sendo alterado=>" + codigoUsuario);
+
+        // Seta o codigo do usuario na session para alteracao
+        sessionStorage.setItem("usucodigo", codigoUsuario);
+
+        window.location.href = "alterar-usuario.html";
+    }
+
+    function excluirUsuario(codigoUsuario) {
+        console.log("Usuario sendo excluido=>" + codigoUsuario);
+
+        var metodo = "POST";
+        var porta = "excluirusuario";
+
+        var body = {
+            usucodigo: codigoUsuario
+        };
+
+        callApi(metodo, porta, body, function(data) {
+            // Carrega os dados do usuario na tela novamente
+            consultarUsuario();
         });
     }
 </script>
 
-<body>
+<body onload="consultarUsuario()">
     <hr>
     <h1>Consulta de Usuarios</h1>
 
@@ -108,6 +146,7 @@
             <th>Nome</th>
             <th>E-mail</th>
             <th>Situação</th>
+            <th colspan="2">Ações</th>
         </thead>
         <tbody class="dados-tabela">
 
