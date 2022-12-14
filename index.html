@@ -165,6 +165,8 @@
             validaConsulta = true;
         }
 
+        validaConsulta = true;
+
         if(validaConsulta){
             callApiTerceiros(metodo, parametros_url, body, function(data) {
                 loadDadosTabela(data, port);
@@ -209,7 +211,7 @@
                         
             const nomebeneficiarioFiltrado = oAuxilio.beneficiario.nome;
             if(nomeBeneficiarioInformado != ""){
-                var isNomeFiltrado = nomebeneficiarioFiltrado.toLowerCase().indexOf(nomeBeneficiarioInformado) > -1;
+                var isNomeFiltrado = nomebeneficiarioFiltrado.toLowerCase().indexOf(nomeBeneficiarioInformado.toLowerCase()) > -1;
                 
                 listadados = false;
                 if(isNomeFiltrado){
