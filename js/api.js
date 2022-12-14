@@ -112,3 +112,27 @@ async function callApi(method, port, body, oCall) {
             console.log('There has been a problem with your fetch operation: ' + error.message);
         });
 }
+
+function formataNumero(num) {
+
+    if (isNaN(num))
+        num = "0";
+    else if (num == null)
+        num = "0";
+
+    num = num.toString().replace(/\$|\,/g, '');
+
+
+    sign = (num == (num = Math.abs(num)));
+    num = Math.floor(num * 100 + 0.50000000001);
+    cents = num % 100;
+    num = Math.floor(num / 100).toString();
+
+    if (cents < 10)
+        cents = "0" + cents;
+
+    for (var i = 0; i < Math.floor((num.length - (1 + i)) / 3); i++)
+        num = num.substring(0, num.length - (4 * i + 3)) + '.' + num.substring(num.length - (4 * i + 3));
+
+    return (((sign) ? '' : '-') + num + ',' + cents);
+}

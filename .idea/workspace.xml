@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/sistema-api-terceiros.html" beforeDir="false" afterPath="$PROJECT_DIR$/sistema-api-terceiros.html" afterDir="false" />
-    </list>
+    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,34 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sistema-api-terceiros.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-              <folding>
-                <element signature="e#710#1706#0" expanded="true" />
-                <element signature="e#1331#1545#0" expanded="true" />
-                <element signature="e#1582#1698#0" expanded="true" />
-                <element signature="e#1751#2258#0" expanded="true" />
-                <element signature="e#2289#2493#0" expanded="true" />
-                <element signature="e#2515#2826#0" expanded="true" />
-                <element signature="e#2659#2818#0" expanded="true" />
-                <element signature="e#2855#3231#0" expanded="true" />
-                <element signature="e#3169#3215#0" expanded="true" />
-                <element signature="e#3263#3521#0" expanded="true" />
-                <element signature="e#3558#6619#0" expanded="true" />
-                <element signature="e#3945#6611#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>

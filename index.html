@@ -231,7 +231,7 @@
             if(listadados){               
                 const mes = oAuxilio.mesDisponibilizacao;
                 const situacao = oAuxilio.situacaoAuxilioEmergencial;
-                const valor = oAuxilio.valor;
+                const valor = "R$ " + formataNumero(oAuxilio.valor);
 
                 // Beneficiario
                 const nomebeneficiario = oAuxilio.beneficiario.nome;
