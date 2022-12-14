@@ -184,4 +184,30 @@ class ControllerApiSistema extends ControllerApiBase {
         return $response->withJson(array("status" => false, "mensagem" => "Não foi informado o código do usuario parametro [usucodigo]"), 200);
     }
 
+    public function incluirUsuario(Request $request, Response $response, array $args){
+        $body = $request->getParsedBody();
+
+        $usunome  = $body["usunome"];
+        $usuemail = $body["usuemail"];
+        $usuativo = intval($body["usuativo"]);
+
+        $ususenha = "123456";
+        $usutoken = "TOKEN_VAZIO";
+
+        $sql_insert_usuario = 'insert into tbusuario(usunome,usuemail,ususenha,usutoken,usuativo) values (
+            \'' . $usunome . '\',
+            \'' . $usuemail . '\',
+            \'' . $ususenha . '\',
+            \'' . $usutoken . '\',
+            ' . $usuativo . '
+          );';
+          
+        $executaQuery = $this->getQuery()->executaQuery($sql_insert_usuario);
+        
+        if($executaQuery){
+            return $response->withJson(array("status" => true, "mensagem" => "Registro incluido com sucesso!"), 200);
+        }
+        
+        return $response->withJson(array("status" => false, "mensagem" => "Erro ao  inserir registro!"), 200);        
+    }
 }

@@ -87,12 +87,14 @@ class Routes {
             // Alterar Usuário
             $app->post('/executaalteracao', ControllerApiSistema::class . ':alterarUsuario');
 
-            // Acoes a desenvolver na aula
-
+            // Incluir Usuario
+            $app->post('/executainclusao', ControllerApiSistema::class . ':incluirUsuario');
+            
         })->add($this->getMiddlewares());
 
         $app->run();
     }
+
 
     /**
      * Retorna a configuração das rotas

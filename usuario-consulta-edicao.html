@@ -107,6 +107,13 @@
             consultarUsuario();
         });
     }
+
+    function incluirUsuario() {
+        // Limpar a sessao
+        sessionStorage.removeItem("usucodigo");
+
+        window.location.href = "alterar-usuario.html";
+    }
 </script>
 
 <body onload="consultarUsuario()">
@@ -137,7 +144,7 @@
         <button onclick="consultarUsuarioFiltro()" class="button2">Consultar Filtros</button>
     </div>
 
-    <button onclick="consultarUsuario()">Consultar Sem Filtros</button>
+    <button onclick="incluirUsuario()">Incluir</button>
 
     <hr>
     <table border="1">

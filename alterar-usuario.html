@@ -8,16 +8,24 @@
     <title>Alterar Usuario</title>
 </head>
 <script>
+    var ACAO_INCLUSAO = "INCLUSAO";
+    var ACAO_ALTERACAO = "ACAO_ALTERACAO";
+
+    // Inicialmente a acao e de alteracao
+    var ACAO = ACAO_ALTERACAO;
+
     function atualizaPaginaUsuario() {
         const codigo_usuario = sessionStorage.getItem("usucodigo");
 
         if (codigo_usuario != null) {
+            ACAO = ACAO_ALTERACAO;
 
             loadDadosUsuario(codigo_usuario);
 
             document.querySelector("#usucodigoAlteracao").innerHTML = "Codigo Informado:" + codigo_usuario;
         } else {
-            alert("Codigo Usuario Não Informado!");
+            //alert("Codigo Usuario Não Informado!");
+            ACAO = ACAO_INCLUSAO;
         }
     }
 
@@ -60,8 +68,74 @@
         });
     }
 
+    function confirmar() {
+        if (ACAO == ACAO_ALTERACAO) {
+            confirmarAlteracaoUsuario();
+        } else if (ACAO == ACAO_INCLUSAO) {
+            confirmarInclusaoUsuario();
+        } else {
+            alert("Ação não encontrada!");
+        }
+    }
+
+    function confirmarInclusaoUsuario() {
+        console.log("Incluindo usuario...");
+
+        // chamar a api para executar a alteracao
+        const usucodigo = document.querySelector("#usucodigo").value;
+        const usunome = document.querySelector("#usunome").value;
+        const usuemail = document.querySelector("#usuemail").value;
+        const usuativo = document.querySelector("#usuativo").value;
+
+        const body = {
+            usucodigo: usucodigo,
+            usunome: usunome,
+            usuemail: usuemail,
+            usuativo: usuativo
+        };
+
+        var metodo = "POST";
+        var porta = "executainclusao";
+
+        callApi(metodo, porta, body, function(data) {
+            alert(data.mensagem);
+
+            // Limpar a sessao
+            sessionStorage.removeItem("usucodigo");
+
+            // redireciona para a consulta
+            window.location.href = "usuario-consulta-edicao.html";
+        });
+    }
+
     function confirmarAlteracaoUsuario() {
         console.log("Alterando usuario...");
+
+        // chamar a api para executar a alteracao
+        const usucodigo = document.querySelector("#usucodigo").value;
+        const usunome = document.querySelector("#usunome").value;
+        const usuemail = document.querySelector("#usuemail").value;
+        const usuativo = document.querySelector("#usuativo").value;
+
+        const body = {
+            usucodigo: usucodigo,
+            usunome: usunome,
+            usuemail: usuemail,
+            usuativo: usuativo
+        };
+
+        var metodo = "POST";
+        var porta = "executaalteracao";
+
+        callApi(metodo, porta, body, function(data) {
+            alert(data.mensagem);
+
+            // Limpar a sessao
+            sessionStorage.removeItem("usucodigo");
+
+            // redireciona para a consulta
+            window.location.href = "usuario-consulta-edicao.html";
+        });
     }
 </script>
 
@@ -70,7 +144,7 @@
     <h2 id="usucodigoAlteracao">Nao Informado</h2>
     <hr>
     <h1>Alteração de Usuario</h1>
-    <!-- <form action="#"> -->
+
     <label for="usucodigo">Código:</label>
     <input type="text" id="usucodigo">
     <br>
@@ -87,7 +161,6 @@
     </select>
     <br>
     <button onclick=confirmarAlteracaoUsuario()>Confirmar</button>
-    <!-- </form> -->
 </body>
 
 <script src="js/api.js" defer></script>
