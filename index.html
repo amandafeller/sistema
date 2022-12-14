@@ -160,6 +160,11 @@
             ULTIMA_PAGINA_FILTRADA = pagina;
         }
 
+        const nomeBeneficiarioInformado = document.querySelector("#nome-auxilio").value;
+        if(nomeBeneficiarioInformado != ""){
+            validaConsulta = true;
+        }
+
         if(validaConsulta){
             callApiTerceiros(metodo, parametros_url, body, function(data) {
                 loadDadosTabela(data, port);
