@@ -11,6 +11,7 @@ require_once("core/Utils.php");
 require_once("controllers/ControllerApiBase.php");
 require_once("controllers/ControllerApiUsuario.php");
 require_once("controllers/ControllerApiSistema.php");
+require_once("controllers/ControllerApiAuxilioEmergencial.php");
 
 class Routes {
 
@@ -89,6 +90,10 @@ class Routes {
 
             // Incluir Usuario
             $app->post('/executainclusao', ControllerApiSistema::class . ':incluirUsuario');
+            
+            // Auxilios
+            $app->post('/auxilios', ControllerApiAuxilioEmergencial::class . ':getAuxilios');
+
             
         })->add($this->getMiddlewares());
 

@@ -11,31 +11,34 @@ use Psr\Http\Message\ResponseInterface as Response;
  * Time: 21:50:00
  */
 require_once("ControllerApiBase.php");
-class ControllerApiAuxilioEmergencial extends ControllerApiBase
-{
+class ControllerApiAuxilioEmergencial extends ControllerApiBase {
 
-    public function getAuxilios(Request $request, /*@var $response MessageInterface */ Response $response, array $args)
-    {
+    public function getAuxilios(Request $request, /*@var $response MessageInterface */ Response $response, array $args){
     
         $body = $request->getParsedBody();
         
         $codigoibge = isset($body["codigoibge"]) ? $body["codigoibge"] : 4214805;
         $mesAno     = isset($body["mesano"]) ? $body["mesano"] : 202204;
-        $pagina     = isset($body["pagina"]) ? $body["pagina"] : 1;
+        $pagina     = isset($body["pagina"]) ? $body["pagina"] : false;
         
         $sSql = " select *
                     from auxilioemergencial
                    where codigoibge = $codigoibge
-                     and mesano = $mesAno
-                     and pagina = $pagina
-                   limit 100 ";
-    
-        $sSql = " select *
-                    from auxilioemergencial
-                   where codigoibge = 4214805 -- Rio do Sul
-                   limit 10 ";
+                     and mesano = $mesAno";
+        
+        if($pagina){
+            $sSql = " select *
+                        from auxilioemergencial
+                    where codigoibge = $codigoibge
+                        and mesano = $mesAno
+                        and pagina = $pagina
+                    limit 100 ";
+        }
 
         $aDados = $this->getQuery()->selectAll($sSql);
+
+        // $aDados["mesanoPARAMETRO"] = $mesAno;
+        // $aDados["sqlPARAMETRO"] = $sSql;
 
         return $response->withJson($aDados, 200);
     }

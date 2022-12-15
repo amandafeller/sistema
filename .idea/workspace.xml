@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="" />
+    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/api/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
@@ -21,7 +24,31 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="3228" column="55" selection-start-line="3228" selection-start-column="37" selection-end-line="3228" selection-end-column="55" />
+              <folding>
+                <element signature="e#7#63#0#PHP" expanded="true" />
+                <element signature="e#117#217#0#PHP" expanded="true" />
+                <element signature="n#getAuxilios#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+                <element signature="n#getAuxiliosTest#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+                <element signature="n#getDadosAuxilio#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+                <element signature="n#getDadosAuxilioPorPagina#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+                <element signature="n#cadastrarAuxilios#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+                <element signature="n#getListaAnos#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getDadosAuxilio</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -39,9 +66,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-77" />
-    <option name="y" value="217" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
     <option name="width" value="2129" />
     <option name="height" value="2097" />
   </component>
@@ -60,6 +86,17 @@
             <path>
               <item name="sistema" type="b2602c69:ProjectViewProjectNode" />
               <item name="sistema" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sistema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sistema" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sistema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sistema" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -141,13 +178,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2672000" />
+    <option name="totallyTimeSpent" value="2886000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-51" y="145" width="1419" height="1398" extended-state="1" />
+    <frame x="-7" y="-7" width="2575" height="1407" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24982207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13705584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -232,13 +269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sistema-api-terceiros.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -256,6 +286,30 @@
             <element signature="e#3263#3521#0" expanded="true" />
             <element signature="e#3558#6619#0" expanded="true" />
             <element signature="e#3945#6611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="3228" column="55" selection-start-line="3228" selection-start-column="37" selection-end-line="3228" selection-end-column="55" />
+          <folding>
+            <element signature="e#7#63#0#PHP" expanded="true" />
+            <element signature="e#117#217#0#PHP" expanded="true" />
+            <element signature="n#getAuxilios#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+            <element signature="n#getAuxiliosTest#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+            <element signature="n#getDadosAuxilio#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+            <element signature="n#getDadosAuxilioPorPagina#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+            <element signature="n#cadastrarAuxilios#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
+            <element signature="n#getListaAnos#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
