@@ -70,7 +70,7 @@ function getMyInitFetchApi(method, body) {
     };
 }
 
-async function callApi(method, port, body, oCall) {
+async function callApi(method, port, body, oCall, urlParam) {
 
     if (body == undefined) {
         body = "";
@@ -85,7 +85,10 @@ async function callApi(method, port, body, oCall) {
     }
 
     // Define a url
-    const url = getUrlBase(port);
+    let url = getUrlBase(port);
+    if (urlParam) {
+        url = urlParam + port;
+    }
 
     console.log("url gerada:" + url);
 

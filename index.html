@@ -163,7 +163,8 @@
             port = "auxilio-emergencial-beneficiario-por-municipio";
         }
 
-        const urlApi = "https://api.portaldatransparencia.gov.br/api-de-dados/" + port;
+        // const urlApi = "https://api.portaldatransparencia.gov.br/api-de-dados/" + port;
+        const urlApi = getUrlBaseApiPHP();
 
         var metodo = "GET";
         
@@ -351,7 +352,7 @@
         });
     }
 
-     function loadDadosAuxilioEmergencialHtml(body, data) {
+    function loadDadosAuxilioEmergencialHtml(body, data) {
 
         const aDadosUsuarios = data;
 
@@ -421,6 +422,10 @@
             }
         });
      }
+
+    function getUrlBaseApiPHP() {
+        return "https://apiphpsenac.herokuapp.com/api.php/";
+    }
 
 </script>
 
