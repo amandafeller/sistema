@@ -186,12 +186,8 @@
         validaConsulta = true;
 
         const ano = document.querySelector("#ano-auxilio").value;
-        const mes = document.querySelector("#mes-auxilio").value;
-
-        if(mes < 10){
-            mes = "0" + mes;
-        }
-
+        let mes = document.querySelector("#mes-auxilio").value;
+        
         const mesano = ano + mes;
 
         var body = {
@@ -250,10 +246,6 @@
     function getFiltrosAuxilioEmergencial() {
         const ano = document.querySelector("#ano-auxilio").value;
         let mes = document.querySelector("#mes-auxilio").value;
-
-        if(mes < 10){
-            mes = "0" + mes;
-        }
 
         const pagina = document.querySelector("#pagina-auxilio").value;
 
