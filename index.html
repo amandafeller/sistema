@@ -70,7 +70,7 @@
     function inicializaFiltroPaginas(){
         var retorno = "<option value='TODAS'>Todas Páginas</option>";
         retorno += "<option value='1' selected >Pagina 1</option>";
-        
+
         var pagina = 2;
         while(pagina < 100){
 
@@ -280,78 +280,10 @@
             });
 
             return false;
+        } else {
+            // Consulta o GOV BR direto
+            loadDadosAuxilioEmergencialHtml(body, aDadosAuxilios);
         }
-
-        loadDadosAuxilioEmergencialHtml(body, aDadosAuxilios);
-
-        // limpa a tabela atual
-        // body.innerHTML = "";
-        //
-        // const parcelaFiltro = document.querySelector("#parcela-auxilio").value;
-        // const nomeBeneficiarioInformado = document.querySelector("#nome-auxilio").value;
-        //
-        // aDadosAuxilios.forEach(function(oAuxilio, key) {
-        //     const parcela = oAuxilio.numeroParcela;
-        //
-        //     let listadados = false;
-        //
-        //     const nomebeneficiarioFiltrado = oAuxilio.beneficiario.nome;
-        //     if(nomeBeneficiarioInformado != ""){
-        //         var isNomeFiltrado = nomebeneficiarioFiltrado.toLowerCase().indexOf(nomeBeneficiarioInformado.toLowerCase()) > -1;
-        //
-        //         listadados = false;
-        //         if(isNomeFiltrado){
-        //             listadados = true;
-        //         }
-        //     } else {
-        //         listadados = true;
-        //     }
-        //
-        //     if(listadados) {
-        //         listadados = false;
-        //         if(parcelaFiltro == parcela || parcelaFiltro == "TODAS"){
-        //             listadados = true;
-        //         }
-        //     }
-        //
-        //     if(listadados){
-        //         const mes = oAuxilio.mesDisponibilizacao;
-        //         const situacao = oAuxilio.situacaoAuxilioEmergencial;
-        //         const valor = "R$ " + formataNumero(oAuxilio.valor);
-        //
-        //         // Beneficiario
-        //         const nomebeneficiario = oAuxilio.beneficiario.nome;
-        //         const cpfbeneficiario = oAuxilio.beneficiario.cpfFormatado;
-        //
-        //         // Responsavel
-        //         const nomeresponsavel = oAuxilio.responsavelAuxilioEmergencial.nome;
-        //         const cpfresponsavel = oAuxilio.responsavelAuxilioEmergencial.cpfFormatado;
-        //
-        //         // Localização
-        //         const codigoibge = oAuxilio.municipio.codigoIBGE;
-        //         const cidade     = oAuxilio.municipio.nomeIBGE;
-        //         const regiao     = oAuxilio.municipio.codigoRegiao + " - " + oAuxilio.municipio.nomeRegiao;
-        //         const estado     = oAuxilio.municipio.uf.sigla + " - " + oAuxilio.municipio.uf.nome;
-        //         const pais       = oAuxilio.municipio.pais;
-        //
-        //         // adiciona as colunas da tabela da consulta
-        //         body.innerHTML += `<tr>
-        //                                 <td>` + mes + `</td>
-        //                                 <td>` + situacao + `</td>
-        //                                 <td>` + parcela + `</td>
-        //                                 <td>` + valor + `</td>
-        //                                 <td>` + nomebeneficiario + `</td>
-        //                                 <td>` + cpfbeneficiario + `</td>
-        //                                 <td>` + nomeresponsavel + `</td>
-        //                                 <td>` + cpfresponsavel + `</td>
-        //                                 <td>` + codigoibge + `</td>
-        //                                 <td>` + cidade + `</td>
-        //                                 <td>` + regiao + `</td>
-        //                                 <td>` + estado + `</td>
-        //                                 <td>` + pais + `</td>
-        //                             </tr>`;
-        //     }
-        // });
     }
 
     function loadDadosAuxilioEmergencialHtml(body, data) {
