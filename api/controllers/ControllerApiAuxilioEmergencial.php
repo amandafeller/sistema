@@ -24,7 +24,8 @@ class ControllerApiAuxilioEmergencial extends ControllerApiBase {
         $sSql = " select *
                     from auxilioemergencial
                    where codigoibge = $codigoibge
-                     and mesano = $mesAno";
+                     and mesano = $mesAno
+                     limit 100 ";
         
         if($pagina){
             $sSql = " select *

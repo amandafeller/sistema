@@ -82,6 +82,20 @@
         document.querySelector("#pagina-auxilio").innerHTML = retorno;
     }
 
+    function inicializaFiltroPaginasPHP(){
+        var retorno = "<option value='TODAS'>Todas Páginas</option>";
+
+        var pagina = 2;
+        while(pagina < 100){
+
+            retorno += "<option value=\"" + pagina + "\">Página até " + pagina + "</option>";
+
+            pagina = pagina + 100;
+        }
+
+        document.querySelector("#pagina-auxilio").innerHTML = retorno;
+    }
+
     async function callApiTerceiros(method, port, body, oCall, urlParam) {
 
         if (body == undefined) {
@@ -187,7 +201,7 @@
 
         const ano = document.querySelector("#ano-auxilio").value;
         let mes = document.querySelector("#mes-auxilio").value;
-        
+
         const mesano = ano + mes;
 
         var body = {
