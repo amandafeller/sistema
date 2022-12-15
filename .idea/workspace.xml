@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/api/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php" afterDir="false" />
+    <list default="true" id="8dcb0b7c-650f-410a-a71d-ef218e61e828" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="2aff5781-cb18-43e2-892b-74ccf226ab3f">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
-              <caret line="3228" column="55" selection-start-line="3228" selection-start-column="37" selection-end-line="3228" selection-end-column="55" />
+              <caret line="3228" column="27" selection-start-line="3228" selection-start-column="27" selection-end-line="3228" selection-end-column="27" />
               <folding>
                 <element signature="e#7#63#0#PHP" expanded="true" />
                 <element signature="e#117#217#0#PHP" expanded="true" />
@@ -39,6 +40,15 @@
                 <element signature="n#cadastrarAuxilios#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
                 <element signature="n#getListaAnos#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -60,13 +70,20 @@
         <option value="$PROJECT_DIR$/usuario-consulta.html" />
         <option value="$PROJECT_DIR$/api/controllers/ControllerApiSistema.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="width" value="2130" />
     <option name="height" value="2097" />
@@ -80,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,7 +120,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -129,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,6 +162,7 @@
       <workItem from="1670862967696" duration="722000" />
       <workItem from="1670882033491" duration="728000" />
       <workItem from="1671035874342" duration="234000" />
+      <workItem from="1671069872273" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1670346108165</created>
@@ -174,11 +192,25 @@
       <option name="project" value="LOCAL" />
       <updated>1671035947101</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changes">
+      <created>1671069913303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671069913303</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changes">
+      <created>1671069919337</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671069919337</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2886000" />
+    <option name="totallyTimeSpent" value="3233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1407" extended-state="6" />
@@ -205,13 +237,14 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/usuario-consulta.html">
@@ -269,38 +302,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sistema-api-terceiros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <element signature="e#710#1706#0" expanded="true" />
-            <element signature="e#1331#1545#0" expanded="true" />
-            <element signature="e#1582#1698#0" expanded="true" />
-            <element signature="e#1751#2258#0" expanded="true" />
-            <element signature="e#2289#2493#0" expanded="true" />
-            <element signature="e#2515#2826#0" expanded="true" />
-            <element signature="e#2659#2818#0" expanded="true" />
-            <element signature="e#2855#3231#0" expanded="true" />
-            <element signature="e#3169#3215#0" expanded="true" />
-            <element signature="e#3263#3521#0" expanded="true" />
-            <element signature="e#3558#6619#0" expanded="true" />
-            <element signature="e#3945#6611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sistema-api-terceiros.html" />
     <entry file="file://$PROJECT_DIR$/api/controllers/ControllerApiAuxilioEmergencial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
-          <caret line="3228" column="55" selection-start-line="3228" selection-start-column="37" selection-end-line="3228" selection-end-column="55" />
+          <caret line="3228" column="27" selection-start-line="3228" selection-start-column="27" selection-end-line="3228" selection-end-column="27" />
           <folding>
             <element signature="e#7#63#0#PHP" expanded="true" />
             <element signature="e#117#217#0#PHP" expanded="true" />
@@ -311,6 +317,20 @@
             <element signature="n#cadastrarAuxilios#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
             <element signature="n#getListaAnos#0;n#ControllerApiAuxilioEmergencial#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
